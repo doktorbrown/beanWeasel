@@ -29,26 +29,28 @@ class ZipArchive: NSObject {
         let archiveUtilPath = "System/Library/CoreServices/Applications/Archive Utility.app"
         
        
-        //original script text:
+        //original script text from Script Editor.app:
+        //let archiveRunScript = "open application file "Archive Utility.app" of folder "Applications" of folder "CoreServices" of folder "Library" of folder "System" of startup disk"
         //unfortunately quotes cause problems
-        //let archiveRunScript = ("open application file "Archive Utility.app" of folder "Applications" of folder "CoreServices" of folder "Library" of folder "System" of startup disk")
         
-        //trying with colon for path
-        //let archiveRunScript = ("open application file Macintosh HD:System:Library:CoreServices:Applications:Archive Utility.app")
+        //solution : use string literals from https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/StringsAndCharacters.html
         
-        //trying with parentheses
-        //let archiveRunScript = ("open application file ("Archive Utility.app") of folder ("Applications") of folder ("CoreServices") of folder ("Library") of folder ("System") of startup disk")
+        //let archiveRunScript = "tell application \"Finder\" activate open application file \"Archive Utility.app\" of folder \"Applications\" of folder \"CoreServices\" of folder \"Library\" of folder \"System\" of startup disk end tell"
         
-        let archiveRunScript = ("open application " + archiveUtilPath)
+        //but we stil get an error: (error running archive script, 0x0000000000000000)  
+        //now considering shell script......  gzip -cfk ~/Movies/iMovie\ Library\.imovielibrary
+    
+        
+        
+       
         println(archiveRunScript)
         var localSourceFile = homedir + "/Movies/iMovie Library.imovielibrary"
         let createScript: NSAppleScript = NSAppleScript(source: archiveRunScript)!
         if var runScript = createScript.executeAndReturnError(error){
             println("running script to create archive")
-
         }
         else{
-            println("error running archive script")
+            println("error running archive script","\(error)")
             errorPopup.runModal()
             NSApplication.sharedApplication().terminate(self)
         }
