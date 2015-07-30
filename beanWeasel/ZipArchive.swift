@@ -38,7 +38,10 @@ class ZipArchive: NSObject {
         //let archiveRunScript = "tell application \"Finder\" activate open application file \"Archive Utility.app\" of folder \"Applications\" of folder \"CoreServices\" of folder \"Library\" of folder \"System\" of startup disk end tell"
         
         //but we stil get an error: (error running archive script, 0x0000000000000000)  
-        //now considering shell script......  gzip -cfk ~/Movies/iMovie\ Library\.imovielibrary
+        //now considering shell script......  gzip -cfk ~/Movies/iMovie\ Library//\.imovielibrary
+
+        //tar -czvf archive.tar.gz ~/Movies/iMovie\ Library\.imovielibrary
+
     
         
         
