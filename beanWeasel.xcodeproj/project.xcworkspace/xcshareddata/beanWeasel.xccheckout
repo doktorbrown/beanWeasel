@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5165BA16-7383-4FD5-B533-15CACEF0FA74</string>
+	<key>IDESourceControlProjectName</key>
+	<string>beanWeasel</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ECC57941C9FC3D7482A90743DBB4F58B0229D76F</key>
+		<string>https://github.com/doktorbrown/beanWeasel.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>beanWeasel.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ECC57941C9FC3D7482A90743DBB4F58B0229D76F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/doktorbrown/beanWeasel.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ECC57941C9FC3D7482A90743DBB4F58B0229D76F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ECC57941C9FC3D7482A90743DBB4F58B0229D76F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>beanWeasel</string>
+		</dict>
+	</array>
+</dict>
+</plist>

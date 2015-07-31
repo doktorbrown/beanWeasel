@@ -39,7 +39,7 @@ class ZipArchive: NSObject {
         
         //but we stil get an error: (error running archive script, 0x0000000000000000)  
         //now considering shell script......  gzip -cfk ~/Movies/iMovie\ Library//\.imovielibrary
-
+        //"tar -czf" will create the archive!!!
         //tar -czvf archive.tar.gz ~/Movies/iMovie\ Library\.imovielibrary
 
     
